@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary : rgb(41, 71, 242);
+    --secondary : rgb(247, 147, 32);
+}
+
+body {
+    margin: 5%;
+    background-color: antiquewhite;
+}
+
+table {
+    border: 1px solid black;
+}
+
+input[type="email"] {
+    border-color: red;
+}
+
+button[data-role="primary"] {
+    border: 2px solid black;
+}
+
+div[data-type="error"] {
+    color: red;
+}
+
+tbody tr:nth-child(2n) {
+    background-color: var(--primary);
+}
+tbody tr:nth-child(2n + 1) {
+    background-color: var(--secondary);
+}
+
+ul li:nth-child(2n) {
+    background-color: var(--primary);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: var(--primary);
+}
+
+article h2 + p::first-letter {
+    font-size: 4rem;
+}
